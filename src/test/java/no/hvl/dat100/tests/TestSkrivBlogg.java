@@ -15,15 +15,15 @@ public class TestSkrivBlogg {
 
 	@Test
 	public void testskriv() {
-		
+
 		Tekst innlegg1 = new Tekst(1,"Ole Olsen","23-10","en tekst");
 		Bilde innlegg2 = new Bilde(2,"Oline Olsen","24-10","et bilde","http://www.picture.com/oo.jpg");
-		
+
 		Blogg samling = new Blogg();
-		
+
 		samling.leggTil(innlegg1);
 		samling.leggTil(innlegg2);
-		
+
 		assertTrue(SkrivBlogg.skriv(samling, MAPPE, FILNAVN));
-	}	
+	}
 }
