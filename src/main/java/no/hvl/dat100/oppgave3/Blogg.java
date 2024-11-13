@@ -69,22 +69,13 @@ public class Blogg {
     }
 	
 	public String toString() {
-//		String string="";
-//		for(int i=0;i<innleggTabell.length;i++){
-//			string += innleggTabell[i].toString();
-//		}
-//
-//
-//		return innleggTabell.length+"\n"+string;
-
-
-		String text = Integer.toString(nesteLedige) + "\n";
-
-		for (int i = 0; i < nesteLedige; i++) {
-			text = text + innleggTabell[i].toString();
+		String string="";
+		for(int i=0;i<nesteLedige;i++){
+			string += innleggTabell[i].toString();
 		}
 
-		return text;
+
+		return nesteLedige+"\n"+string;
 
 	}
 
